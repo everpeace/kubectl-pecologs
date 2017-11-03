@@ -27,6 +27,7 @@ Examples:
   pecologs --since=1s query
 
 Options:
+      --all-namespaces='false': list pods and containers in all namespaces
       --dry-run='false': dry run mode. just print out commands to be executed.
   -i, --interactive='true': if you set false, you can skip peco.
       --since='1s': Only return logs newer than a relative duration like 5s, 2m, or 3h. Defaults to all.

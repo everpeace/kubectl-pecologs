@@ -14,3 +14,6 @@ flags:
   - name: "dry-run"
     desc: "dry run mode. just print out commands to be executed."
     defValue: "false"
+  - name: "all-namespaces"
+    desc: "list pods and containers in all namespaces"
+    defValue: "false"
