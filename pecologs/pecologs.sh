@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
 set -euf -o pipefail
+PECO_FILTER="Regexp"
 SEP=":"
 
 # print log of container
@@ -91,7 +92,7 @@ fi)
 
 if [[ "$INTERACTIVE" = "true" ]]; then
   list=$(target_pod_and_conatiners)
-  targets=$(echo "$list" | peco --initial-filter=Fuzzy --query "$QUERY")
+  targets=$(echo "$list" | peco --initial-filter="$PECO_FILTER" --query "$QUERY")
 else
   targets=$(target_pod_and_conatiners | grep "$QUERY")
 fi

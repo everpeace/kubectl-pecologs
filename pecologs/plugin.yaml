@@ -1,6 +1,6 @@
 name: "pecologs"
 shortDesc: "'kubectl logs' for multiple containers by specifing query and peco"
-longDesc: "output container logs of containers specifying by query and  peco."
+longDesc: "output container logs of containers specifying by query and  peco.  given query can be regexp."
 example: "pecologs --since=1s query"
 command: "./pecologs.sh"
 flags:
