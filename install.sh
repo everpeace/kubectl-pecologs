@@ -9,7 +9,7 @@ echo "Downloading pecologs.."
 wget -q -P $WORKDIR https://github.com/everpeace/kubectl-pecologs/archive/master.zip
 
 echo ""
-echo "Extracting installing pecologs..."
+echo "Extracting installing pecologs to \"$INSTALL_DIR/pecologs\"..."
 (cd $WORKDIR; unzip -q master.zip)
 mkdir -p $HOME/.kube/plugins
 cp -r $WORKDIR/kubectl-pecologs-master/pecologs $INSTALL_DIR/pecologs
